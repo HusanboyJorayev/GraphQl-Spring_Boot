@@ -1,0 +1,25 @@
+type Product{
+  id: ID,
+  type:String
+  price:Float
+}
+
+type User{
+  id: ID,
+  nickname:String
+  age:Int
+  products:[Product]
+}
+
+
+type Query{
+  getAll: [Product]
+  getProductById(id: ID): Product
+  getAllUsers: [User]
+  getUserWithProducts(id: ID): User
+}
+type Mutation{
+updateById(id:ID,type:String):Product
+updateUserById(id:ID,age:Int):User
+deleteUserById(id:ID):String
+}
