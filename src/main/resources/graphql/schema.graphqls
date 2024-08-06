@@ -23,3 +23,4 @@ updateById(id:ID,type:String):Product
 updateUserById(id:ID,age:Int):User
 deleteUserById(id:ID):String
 }
+
